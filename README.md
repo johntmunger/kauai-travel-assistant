@@ -1,4 +1,4 @@
-### Kauai Travel Helper
+### Kauai Travel Assistant
 
 A structured API orchestration project demonstrating **deterministic client–server boundaries**, **third-party data normalization**, and **service-layer abstraction** within a **Vue 3 + Node.js** architecture.
 
