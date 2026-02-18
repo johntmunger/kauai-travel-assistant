@@ -1,45 +1,60 @@
 ### Kauai Travel Helper
 
-Fullstack single-page application integrating the **Google Places API** to explore region-based activity discovery across Kauai.
+A structured API orchestration project demonstrating **deterministic client–server boundaries**, **third-party data normalization**, and **service-layer abstraction** within a **Vue 3 + Node.js** architecture.
 
-Built to explore **structured API orchestration**, **client-server separation**, and **real-time third-party data integration** within a **Vue 3 + Node.js** environment.
+Originally built to explore clean separation of concerns and real-time data integration patterns that later informed AI workflow and systems orchestration work.
 
-### Architecture Overview
+### Architectural Intent
 
-The application follows a two-tier structure:
+This project emphasizes:
 
-#### Frontend (Vue 3 SPA)
+- **Strict client–server separation**
+- **Deterministic data transformation layers**
+- **Third-party API normalization**
+- **Service abstraction** for controlled external integration
+- **Scalable SPA routing patterns**
 
-- **Composition API–based** component architecture  
-- **Route-driven** regional navigation  
-- **Service-layer abstraction** for API communication  
-- **Responsive UI** built with Tailwind CSS  
+> While not AI-based, the system design principles mirror production AI integration patterns: bounded execution, structured data flow, and controlled external dependency handling.
 
-#### Backend (Node.js / Express API)
+### System Architecture
 
-- **RESTful endpoints** for region-based activity queries  
-- **Google Places API integration** for real-time activity data  
-- **Data transformation layer** to normalize third-party responses before returning to the client  
+#### Frontend — Vue 3 (SPA)
+
+- **Composition API–driven** modular component architecture
+- **Route-driven** regional segmentation
+- **Dedicated service layer** for backend communication
+- **Stateless UI rendering** based on normalized API responses
+- **Responsive UI** built with Tailwind CSS
+
+#### Backend — Node.js / Express
+
+- **RESTful** region-based endpoints
+- **Encapsulated** Google Places API integration
+- **Data transformation and normalization** layer
+- **Controlled exposure** of third-party data to client
 
 ### Data Flow
 
-1. **User selects** a geographic region  
-2. **Frontend calls** Express API endpoint  
-3. **Backend queries** Google Places API  
-4. **Response data is normalized** and returned to the client  
-5. **UI renders** structured activity information  
+1. **User selects** geographic region
+2. **Frontend service layer** invokes backend endpoint
+3. **Backend queries** Google Places API
+4. **Raw third-party response** is normalized
+5. **Structured payload** returned to client
+6. **UI renders** deterministic region-based activity data
 
-This design emphasizes **real-time API orchestration** and **clean client-server separation**.
+This design highlights:
 
-### Live Demo
+- **External API encapsulation**
+- **Clean transformation boundaries**
+- **Separation** between presentation and integration layers
 
-> Demonstrates real-time Google Places API orchestration and structured client-server separation in a deployed environment
+### Deployment
 
-- **Frontend**: [`https://kauai-guide.onrender.com`](https://kauai-guide.onrender.com)
-- **API**: [`https://kauai-backend.onrender.com/api`](https://kauai-backend.onrender.com/api)
+Deployed on Render with environment-based configuration and secure API key handling.
 
-Deployed on Render with environment-based API key configuration and clean client-server separation.
+- **Frontend**: [https://kauai-guide.onrender.com](https://kauai-guide.onrender.com)
+- **API**: [https://kauai-backend.onrender.com/api](https://kauai-backend.onrender.com/api)
 
 ### Technologies
 
-**Vue 3 · Composition API · Node.js · Express · Google Places API · Tailwind CSS**
+**Vue 3 · Composition API · Node.js · Express · Google Places API · Tailwind CSS · REST Architecture · Service Abstraction Patterns**
